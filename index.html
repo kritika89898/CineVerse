@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galactic Convergence</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #181818;
+    }
+
+    header img {
+      height: 40px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
+
+    nav a:hover {
+      opacity: 1;
+    }
+
+    .hero {
+      background-image: url('background-image.png'); /* Add your background image URL */
+      background-size: cover;
+      background-position: center;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px;
+      text-align: left;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      max-width: 600px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .button.play {
+      background-color: #6f49ff;
+      color: #fff;
+    }
+
+    .button.trailer {
+      background-color: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+    }
+
+    .episodes {
+      padding: 40px;
+    }
+
+    .episodes h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .episodes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .episode-card {
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      overflow: hidden;
+      color: #fff;
+    }
+
+    .episode-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .episode-card .content {
+      padding: 20px;
+    }
+
+    .episode-card h4 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .episode-card p {
+      font-size: 14px;
+      opacity: 0.8;
+      margin-bottom: 10px;
+    }
+
+    .episode-card span {
+      font-size: 12px;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Playcine Logo"> <!-- Replace with your logo -->
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Movies</a>
+      <a href="#">Series</a>
+      <a href="#">TV Shows</a>
+      <a href="#">Browse By Language</a>
+    </nav>
+    <div class="icons">
+      <a href="#"><img src="search-icon.jpg" alt="Search"></a> <!-- Replace icons -->
+      <a href="#"><img src="notification-icon.png" alt="Notifications"></a>
+      <a href="#"><img src="user-icon.png" alt="User"></a>
+    </div>
+  </header>
+  <section class="hero">
+    <h1>GALACTIC CONVERGENCE</h1>
+    <h2>INVASION OF EARTH</h2>
+    <p>Playcine Official: New Episode Tonight. In the midst of a cataclysmic extraterrestrial invasion, a diverse group of unlikely heroes must unite to save humanity from the relentless onslaught...</p>
+    <div class="buttons">
+      <button class="button play">Play</button>
+      <button class="button trailer">Trailer</button>
+    </div>
+  </section>
+  <section class="episodes">
+    <h3>Episodes</h3>
+    <div class="episodes-grid">
+      <div class="episode-card">
+        <img src="episode1.jpg" alt="Episode 1">
+        <div class="content">
+          <h4>Episode 1: Invasion Begins</h4>
+          <p>Earth faces relentless extraterrestrial assault, igniting the epic conflict.</p>
+          <span>52 mins</span>
+        </div>
+      </div>
+      <div class="episode-card">
+        <img src="episode2.jpg" alt="Episode 2">
+        <div class="content">
+          <h4>Episode 2: Beneath the Stars</h4>
+          <p>Secrets unravel within a hidden alien outpost's mysterious depths.</p>
+          <span>54 mins</span>
+        </div>
+      </div>
+      <div class="episode-card">
+        <img src="episode3.jpg" alt="Episode 3">
+        <div class="content">
+          <h4>Episode 3: Fight for Survival</h4>
+          <p>Heroes battle fiercely against overwhelming odds...</p>
+          <span>50 mins</span>
+        </div>
+      </div>
+      <div class="episode-card">
+        <img src="episode4.jpg" alt="Episode 4">
+        <div class="content">
+          <h4>Episode 4: Betrayal in the Shadows</h4>
+          <p>Loyalties fracture amidst chaos, endangering the mission...</p>
+          <span>50 mins</span>
+        </div>
+      </div>
+      <div class="episode-card">
+        <img src="episode5.jpg" alt="Episode 5">
+        <div class="content">
+          <h4>Episode 5: Reckoning</h4>
+          <p>Alien motives exposed, culminating in a pivotal confrontation.</p>
+          <span>50 mins</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
